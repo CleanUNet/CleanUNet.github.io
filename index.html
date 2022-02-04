@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Sound demos for "Speech Denoising in the Waveform Domain with Self-Attention"</title>
+
+  </head>
+
+    <h2>Sound demos for "Speech Denoising in the Waveform Domain with Self-Attention"</h2>
+
+    <p><b>Authors: Zhifeng Kong, Wei Ping, Ambrish Dantrey, Bryan Catanzaro </b></p>
+
+    We present audio samples for the causal CleanUNet model proposed in 
+    <i> Speech Denoising in the Waveform Domain with Self-Attention.</i>
+    We use CleanUNet with <var>N=5</var> self attention blocks in the bottleneck layer and <var>L1</var> plus high-band STFT losses.
+    We compare CleanUNet to other SOTA models including the FAIR-denoiser and FullSubNet. 
+
+  <body style="font-family: Helvetica">
+  <!-- <body style="font-family: Palatino, serif"> -->
+
+  	<br> </br>
+    <h3> Speech Denoising on the <a href="https://arxiv.org/abs/2001.08662"> DNS (2020) Dataset </a> </h3>
+    
+    <br> </br>
+    Keyboard / Mechanical noise 
+    <br> </br>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="middle">Noisy</th>
+          <th align="middle">CleanUNet (ours)</th>
+          <th align="middle">FAIR-denoiser</th>
+          <th align="middle">FullSubNet</th>
+          <th align="middle">Clean (reference)</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/5.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/5.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/1.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/1.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/8.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/8.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/11.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/11.wav" type="audio/wav"></audio></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br> </br>
+    Dog barking 
+    <br> </br>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="middle">Noisy</th>
+          <th align="middle">CleanUNet (ours)</th>
+          <th align="middle">FAIR-denoiser</th>
+          <th align="middle">FullSubNet</th>
+          <th align="middle">Clean (reference)</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/3.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/3.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/4.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/4.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/10.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/10.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/10.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/10.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/10.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/13.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/13.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/13.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/13.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/13.wav" type="audio/wav"></audio></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br> </br>
+    Human talking 
+    <br> </br>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="middle">Noisy</th>
+          <th align="middle">CleanUNet (ours)</th>
+          <th align="middle">FAIR-denoiser</th>
+          <th align="middle">FullSubNet</th>
+          <th align="middle">Clean (reference)</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/14.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/14.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/14.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/14.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/14.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/9.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/9.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+      </tbody>
+    </table>
+
+    <br> </br>
+    Indoor noise
+    <br> </br>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="middle">Noisy</th>
+          <th align="middle">CleanUNet (ours)</th>
+          <th align="middle">FAIR-denoiser</th>
+          <th align="middle">FullSubNet</th>
+          <th align="middle">Clean (reference)</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/7.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/7.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/7.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/7.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/7.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/12.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/12.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/12.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/12.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/12.wav" type="audio/wav"></audio></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br> </br>
+    Street noise
+    <br> </br>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="middle">Noisy</th>
+          <th align="middle">CleanUNet (ours)</th>
+          <th align="middle">FAIR-denoiser</th>
+          <th align="middle">FullSubNet</th>
+          <th align="middle">Clean (reference)</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/2.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/2.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br> </br>
+    Shrill noise
+    <br> </br>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="middle">Noisy</th>
+          <th align="middle">CleanUNet (ours)</th>
+          <th align="middle">FAIR-denoiser</th>
+          <th align="middle">FullSubNet</th>
+          <th align="middle">Clean (reference)</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/6.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/6.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br> </br>
+    Wind noise
+    <br> </br>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="middle">Noisy</th>
+          <th align="middle">CleanUNet (ours)</th>
+          <th align="middle">FAIR-denoiser</th>
+          <th align="middle">FullSubNet</th>
+          <th align="middle">Clean (reference)</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/noisy/15.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source  src="DNS/cleanunet/15.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source       src="DNS/fair/15.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source src="DNS/fullsubnet/15.wav" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; height: 50px"><source      src="DNS/clean/15.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
